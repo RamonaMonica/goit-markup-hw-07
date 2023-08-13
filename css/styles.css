@@ -127,7 +127,7 @@ a.footer-icon {
     display: none;
 }
 
-.logo-image {
+.logo-img {
     display: flex;
     position: absolute;
     box-sizing: content-box;
@@ -139,6 +139,239 @@ a.footer-icon {
     left: 15px;
 
 }
+.menu-button.js-open-menu {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
+.menu-button.js-open-menu:hover svg {
+    fill: #2196F3;
+}
+
+.menu-button.js-open-menu:focus svg {
+    fill: #2196F3;
+}
+
+.menu-button.js-close-menu {
+    display: flex;
+    position: absolute;
+    border: none;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.js-menu-container {
+    display: none
+}
+
+.menu-button.js-close-menu:hover svg {
+    fill: #2196F3;
+}
+
+.menu-button.js-close-menu:focus svg {
+    fill: #2196F3;
+}
+
+.js-menu-container.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width: 480px;
+    height: 796px;
+    background-color: #fff;
+    z-index: 5;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+
+.backdrop-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.backdrop-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 208px;
+    position: absolute;
+    width: 219px;
+    top: 48px;
+    left: 40px;
+}
+
+.backdrop-page-one {
+    width: 139px;
+    height: 48px;
+    flex-shrink: 0;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.backdrop-page-two {
+    width: 219px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #212121;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.backdrop-page-three {
+    width: 192px;
+    height: 48px;
+    flex-shrink: 0;
+    width: 192px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #212121;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.backdrop-links li a:hover,
+.backdrop-contacts-phone a:hover,
+.backdrop-contacts-email a:hover {
+    color: #2196F3;
+}
+
+.backdrop-links li a:focus,
+.backdrop-contacts-phone a:focus,
+.backdrop-contacts-email a:focus {
+    color: #2196F3;
+}
+
+.backdrop-contacts-phone {
+    display: flex;
+    position: absolute;
+    width: 273px;
+    height: 40px;
+    left: 40px;
+    bottom: 194px;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+}
+
+.backdrop-contacts-email {
+    display: flex;
+    position: absolute;
+    width: 231px;
+    height: 28px;
+    left: 40px;
+    bottom: 134px;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+}
+
+.backdrop-social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    width: 357px;
+    height: 22px;
+    left: 33px;
+    bottom: 48px;
+
+}
+
+.backdrop-social li {
+    position: relative;
+    padding: 0 10px;
+}
+
+.backdrop-social a {
+    text-decoration: none;
+    color: #000;
+}
+
+.backdrop-social li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    height: 20px;
+    border-right: 2px solid #000;
+}
+
+.backdrop-social-istagram {
+    display: flex;
+    width: 85px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+}
+
+.backdrop-social-twitter {
+    display: flex;
+    width: 59px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+}
+
+.backdrop-social-facebook {
+    display: flex;
+    width: 81px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+}
+
+.backdrop-social-linkedin {
+    display: flex;
+    width: 72px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+}
+
+.backdrop-social li:hover a {
+    color: #2196F3;
+}
+
 
 
 
@@ -165,17 +398,17 @@ a.footer-icon {
     margin-bottom: 50px;
 }
 
-.button-one,
-.button-two,
-.button-three,
-.button-four,
-.button-five {
+.all-button,
+.web-button,
+.app-button,
+.design-button,
+.marketing-button {
     border: 0;
     border-radius: 4px;
     height: 38px;
 }
 
-.button-one {
+.all-button {
     box-sizing: border-box;
     width: 64px;
     height: 38px;
@@ -191,11 +424,11 @@ a.footer-icon {
     transition-duration: 250ms;
 }
 
-.button-one:active {
+.all-button :focus {
     color: #2196f3;
 }
 
-.button-two {
+.web-button {
     box-sizing: border-box;
     width: 111px;
     height: 38px;
@@ -210,7 +443,7 @@ a.footer-icon {
     transition-duration: 250ms;
 }
 
-.button-three {
+.app-button {
     box-sizing: border-box;
     width: 83px;
     background-color: #f5f4fa;
@@ -224,7 +457,7 @@ a.footer-icon {
     transition-duration: 250ms;
 }
 
-.button-four {
+.design-button {
     box-sizing: border-box;
     width: 96px;
     background-color: #f5f4fa;
@@ -239,7 +472,7 @@ a.footer-icon {
     transition-duration: 250ms;
 }
 
-.button-five {
+.marketing-button {
     box-sizing: border-box;
     width: 121px;
     background-color: #f5f4fa;
@@ -254,20 +487,20 @@ a.footer-icon {
     transition-duration: 250ms;
 }
 
-.button-one:hover,
-.button-two:hover,
-.button-three:hover,
-.button-four:hover,
-.button-five:hover {
+.all-button:hover,
+.web-button:hover,
+.app-button:hover,
+.design-button:hover,
+.marketing-button:hover {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.button-one:focus,
-.button-two:focus,
-.button-three:focus,
-.button-four:focus,
-.button-five:focus {
+.all-button:focus,
+.web-button:focus,
+.appbutton:focus,
+.design.button:focus,
+.marketing.button:focus {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -445,40 +678,34 @@ a.footer-icon {
 }
 
 .contacts-mail {
-    color: #ffffff;
-    width: 231px;
-    height: 16px;
-    text-align: center;
-    line-height: 1.14em;
-    font-size: 14px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    text-decoration: none;
-    transition-property: color, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    display: flex;
+    box-sizing: content-box;
+    margin-right: 40px;
+    width: 135px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #FFF;
+    gap: 5px;
 }
 
-.contacts-telephone {
-    color: #ffffff;
-    width: 231px;
-    height: 16px;
-    text-align: center;
-    line-height: 1.14em;
-    font-size: 14px;
-    text-decoration: none;
-    transition-property: color, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-
-.contacts-telephone:hover,
-.contacts-telephone:focus {
+.contacts-mail a:hover,
+.contacts-mail a:focus {
     color: #2196f3;
 }
-
-.contacts-mail:hover,
-.contacts-mail:focus {
+.contacts-telephone {
+    display: flex;
+    box-sizing: content-box;
+    width: 132px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.28px;
+    gap: 5px;
+}
+.contacts-telephone a:hover,
+.contacts-telephone a:focus {
     color: #2196f3;
 }
 
@@ -1395,6 +1622,17 @@ a.icon:focus {
         left: 15px;
 
     }
+    .menu-button.js-open-menu {
+        display: none;
+    }
+
+    .js-open-menu {
+        display: none;
+    }
+
+    .js-menu-container {
+        display: none;
+    }
 
 
 
@@ -2002,8 +2240,17 @@ a.icon:focus {
         align-items: center;
         width: 145px;
         height: 31px;
-        top: 6px;
-        left: 215px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-left: 215px;
+        margin-right: 0;
+    }
+    .js-open-menu {
+        display: none;
+    }
+
+    .js-menu-container {
+        display: none;
     }
 
     
@@ -3213,17 +3460,17 @@ a.icon:focus {
         margin-bottom: 50px;
     }
 
-    .button-one,
-    .button-two,
-    .button-three,
-    .button-four,
-    .button-five {
+    .all-button,
+.web-button,
+.app-button,
+.design-button,
+.marketing-button  {
         border: 0;
         border-radius: 4px;
         height: 38px;
     }
 
-    .button-one {
+    .all-button {
         box-sizing: content-box;
         width: 20px;
         background-color: #2196f3;
@@ -3238,11 +3485,11 @@ a.icon:focus {
         transition-duration: 250ms;
     }
 
-    .button-one:active {
+    .all-button:active {
         color: #2196f3;
     }
 
-    .button-two {
+    .web-button {
         box-sizing: content-box;
         width: 76px;
         background-color: #f5f4fa;
@@ -3257,7 +3504,7 @@ a.icon:focus {
         transition-duration: 250ms;
     }
 
-    .button-three {
+    .app-button {
         box-sizing: content-box;
         width: 39px;
         background-color: #f5f4fa;
@@ -3271,7 +3518,7 @@ a.icon:focus {
         transition-duration: 250ms;
     }
 
-    .button-four {
+    .design-button {
         box-sizing: content-box;
         width: 52px;
         background-color: #f5f4fa;
@@ -3286,7 +3533,7 @@ a.icon:focus {
         transition-duration: 250ms;
     }
 
-    .button-five {
+    .marketing-button  {
         box-sizing: content-box;
         width: 77px;
         background-color: #f5f4fa;
@@ -3301,20 +3548,20 @@ a.icon:focus {
         transition-duration: 250ms;
     }
 
-    .button-one:hover,
-    .button-two:hover,
-    .button-three:hover,
-    .button-four:hover,
-    .button-five:hover {
+    .all-button:hover,
+    .web-button:hover,
+    .app-button:hover,
+    .design-button:hover,
+    .marketing-button:hover {
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
 
-    .button-one:focus,
-    .button-two:focus,
-    .button-three:focus,
-    .button-four:focus,
-    .button-five:focus {
+    .all-button:focus,
+    .web-button:focus,
+    .appbutton:focus,
+    .design.button:focus,
+    .marketing.button:focus{
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
