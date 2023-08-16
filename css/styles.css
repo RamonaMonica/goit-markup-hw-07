@@ -3,6 +3,7 @@
 .body {
     font-family: 'Roboto', 'Raleway', 'Times New Roman', 'sans-serif';
     color: #212121;
+    display: block;
 }
 
 :root {
@@ -78,10 +79,11 @@ a.footer-icon {
 
 .general-container {
     width: 480px;
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #ececec;
+    display: block;
 }
 
 .principal-container {
